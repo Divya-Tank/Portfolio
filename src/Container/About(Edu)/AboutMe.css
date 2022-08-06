@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.bg{
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.heading{
+    margin: 30px 0 30px 0;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 0 ;
+}
+.mb{
+    margin-bottom: 5px;
+}
+
+h3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    padding-top: 18px;
+}
+.bg2{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.skills{
+    cursor: pointer; 
+    margin-right: 20px;
+}
+
+.educations{
+    cursor: pointer;
+}
+
+.cols{
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 5px;
+    transition: 1s;
+}
+.cols:hover{
+    transform: scale(1.1);
+    z-index: 2;
+}
+
+.tab-content img{
+    margin: 29px;
+    width: 200px;
+    height: 140px;
+    background: rgba(79, 53, 116, 0.388);
+    padding: 20px 30px;
+    border:  1px solid  rgba(79, 53, 116, 0.088);
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.4);
+}
+.certi{
+    text-decoration: underline rgb(79, 53, 116) ;
+    font-weight: 600;
+}
+.colz{
+    padding-top: 30px;
+    padding-bottom: 40px;
+}
+

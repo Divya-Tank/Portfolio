@@ -1,0 +1,154 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.last {
+    /* height: 87.8vh; */
+    margin-top:40px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.feedback {
+    width: 90%;
+    background: #fff;
+    padding: 30px 60px 40px 40px;
+    border-radius: 7px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
+}
+
+.feedback .contact {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.feedback .contact .left-size {
+    width: 25%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+    position: relative;
+}
+
+.contact .left-size::before {
+    content: '';
+    position: absolute;
+    height: 70%;
+    width: 2px;
+    right: -15px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #f1cdcd;
+}
+
+.contact .left-size .detail {
+    margin: 14px;
+    text-align: center;
+}
+
+.contact .left-size .detail i {
+    font-size: 20px;
+    color: rgba(255, 0, 0, 0.886);
+    margin-bottom: 10px;
+}
+
+.contact .left-size .detail .topic {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.contact .left-size .detail .text-one {
+    font-size: 14px;
+    color: #afafb6;
+}
+
+.feedback .contact .right-side {
+    width: 75%;
+    margin-left: 75px;
+}
+
+.contact .right-side .topic-text {
+    font-size: 23px;
+    font-weight: 600;
+    color:purple;
+}
+
+.right-side .input-box {
+    height: 50px;
+    width: 100%;
+    margin: 12px 0;
+}
+
+.right-side .input-box input,
+.right-side .input-box textarea {
+    height: 100%;
+    width: 100%;
+    font-size: 16px;
+    /* font-weight: 500; */
+    border: none;
+    border-radius: 5px;
+    background: rgba(136, 25, 136, 0.107);
+    padding: 0 15px;
+    resize: none;
+}
+
+.right-side .message-box {
+    min-height: 110px;
+    margin-top: 6px;
+}
+
+.right-side .button {
+    display: inline-block;
+    margin-top: 12px;
+}
+
+.right-side .button input[type="submit"] {
+    color: #fff;
+    font-size: 18px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 16px;
+    background: rgb(79, 53, 116);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+@media (max-width:860px) {
+    .feedback {
+        width: 90%;
+        padding: 30px 35px 40px 35px;
+    }
+}
+
+@media (max-width:720px) {
+    .feedback {
+        margin: 40px 0;
+        height: 100%;
+    }
+    .feedback .contact {
+        flex-direction: column-reverse;
+    }
+    .feedback .contact .left-size {
+        width: 90%;
+        flex-direction: column;
+        margin-top: 40px;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .feedback .contact .left-size::before {
+        display: none;
+    }
+    .feedback .contact .right-side {
+        width: 90%;
+        margin-left: 0;
+    }
+}

@@ -1,0 +1,199 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.profile-container {
+  background-color: rgb(79, 53, 116);
+  clip-path: polygon(100% 0, 100% 83%, 33% 100%, 0 81%, 0 0);
+}
+.wrapper {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+  height: 87.8vh;
+}
+.box div {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  border: 3px solid white;
+}
+.box div:nth-child(1) {
+  top: 1%;
+  left: 30%;
+  animation: square 5s linear infinite;
+}
+.box div:nth-child(2) {
+  top: 10%;
+  left: 60%;
+  animation: square 7s linear infinite;
+}
+.box div:nth-child(3) {
+  top: 58%;
+  left: 10%;
+  animation: square 9s linear infinite;
+}
+
+.box div:nth-child(4) {
+  top: 55%;
+  left: 30%;
+  animation: square 11s linear infinite;
+}
+.box div:nth-child(5) {
+  top: 20%;
+  left: 5%;
+  animation: square 7s linear infinite;
+}
+.box div:nth-child(6) {
+  top: 30%;
+  left: 90%;
+  animation: square 13s linear infinite;
+}
+.box div:nth-child(7) {
+  top: 55%;
+  left: 70%;
+  animation: square 12s linear infinite;
+}
+.box div:nth-child(8) {
+  top: 30%;
+  left: 75%;
+  animation: square 7s linear infinite;
+}
+@keyframes square {
+  0% {
+    transform: scale(0) translateY(0) rotate(0);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1.3) translateY(-90px) rotate(360deg);
+    opacity: 0;
+  }
+}
+.pd {
+  padding-top: 150px;
+}
+.cols {
+  text-align: center;
+  padding-top: 150px;
+}
+.github {
+  color: black;
+  padding-right: 10px;
+  font-size: 20px;
+}
+.linkedin {
+  color: rgb(47, 47, 237);
+  font-size: 20px;
+}
+
+.text {
+  overflow: hidden;
+  color: rgb(255, 248, 220);
+  padding-bottom: 10px;
+}
+
+.text span {
+  position: relative;
+  font-size: 60px;
+}
+
+.text span::after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  background: rgb(79, 53, 116);
+  animation: typing 2.5s steps(23) infinite;
+  border-left: 2px solid rgb(255, 248, 220);
+}
+
+@keyframes typing {
+  100% {
+    left: 100%;
+    margin: 0 -35px 0 35px;
+  }
+}
+
+.profile-detail {
+  text-align: center;
+}
+.primary-text {
+  color: rgb(204, 204, 255);
+}
+.primary-text .highlighted-text {
+  font-weight: 500;
+  font-size: 22px;
+  color: rgb(253, 218, 13);
+}
+
+.profil-role-tagline {
+  color: rgb(204, 204, 255);
+}
+.profile-options {
+  padding-bottom: 150px;
+  margin-top: 35px;
+}
+@media (width: 1024px) {
+  .pd {
+    padding-top: 80px;
+  }
+  .profile-options {
+    padding-bottom: 120px;
+    margin-top: 40px;
+  }
+}
+@media (max-width: 476px) {
+  .pd {
+    padding-top: 80px;
+  }
+}
+@media (max-width: 786px) {
+    .pd {
+      padding-top: 75px;
+    }
+    .text span {
+      font-size: 50px;
+    }
+  }
+  @media (max-width: 550px) {
+    .pd {
+      padding-top: 65px;
+    }
+    .text span {
+      font-size: 40px;
+    }
+  }
+  @media (max-width: 400px) {
+    .pd {
+      padding-top: 45px;
+    }
+    .text span {
+      font-size: 37px;
+    }
+    .profile-options {
+      padding-bottom: 90px;
+      margin-top: 25px;
+    }
+  }
+@media (max-width: 385px) {
+  .pd {
+    padding-top: 50px;
+  }
+}
+
+@media (max-width: 320px) {
+  .pd {
+    padding-top: 30px;
+  }
+  .text span {
+    font-size: 35px;
+  }
+  .profile-options {
+    padding-bottom: 70px;
+    margin-top: 25px;
+  }
+}

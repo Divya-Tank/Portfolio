@@ -1,0 +1,17 @@
+.nav1{
+    border: 1px solid rgb(79, 53, 116) ;
+    background-color: rgb(79, 53, 116);
+    padding: 0;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+.fontcolor{
+    color: aliceblue;
+    margin-right: 20px;
+}
+.text-white:hover{
+    color: aliceblue;
+    border-bottom: 2px solid yellow;
+    transition: 0.5s ease;
+}
